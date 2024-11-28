@@ -1,0 +1,7 @@
+//Aquí van a ir todos los archivos que luegon van al app.scss
+ //forward: Nos sirve para incluir archivos dentro de otros
+@forward 'normalize';
+@forward 'variables';
+@forward 'mixins';
+@forward 'globales';
+@forward 'tipografia';

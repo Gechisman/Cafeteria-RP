@@ -1,0 +1,25 @@
+@use 'variables' as v;
+
+@mixin telefono{
+    @media (min-width: v.$telefono){
+        @content; //Para que tome todo el contenido que le pasamos en el mixin del header.
+    }
+}
+
+@mixin tablet{
+    @media (min-width: v.$tablet){
+        @content; //Para que tome todo el contenido que le pasamos en el mixin del header.
+    }
+}
+
+@mixin desktop{
+    @media (min-width: v.$desktop){
+        @content; //Para que tome todo el contenido que le pasamos en el mixin del header.
+    }
+}
+
+@mixin grid($columnas, $espaciado){
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espaciado;
+}

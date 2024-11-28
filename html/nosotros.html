@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería SASS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:wght@700;900&family=Roboto:wght@400;700&display=swap" 
+            rel="stylesheet">
+    <link rel="stylesheet" href="../build/css/app.css">
+</head>
+<body>
+    
+    <header class="header header-nosotros">
+        <div class="contenido-header contenedor">
+            <div class="barra">
+                <div class="logo">
+                    <img src="../build/img/logo.svg" alt="Logo cafetería">
+                </div>
+                <nav class="nav-principal">
+                    <a href="../index.html">Inicio</a> <!--La clase activo hace que se quede marcado ese enlace-->
+                    <a class="activo" href="/html/nosotros.html">Nosotros</a>
+                    <a href="/html/proceso.html">Proceso</a>
+                    <a href="/html/menu.html">Menú</a>
+                    <a href="/html/galeria.html">Galería</a>
+                    <a href="/html/contacto.html">Contacto</a>
+                </nav>
+            </div>
+
+            <div class="texto-header">
+                <h1>Una nueva experiencia cada día</h1>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="contenedor contenido-principal">
+        <h2><span>Conoce más</span> sobre nosotros</h2>
+
+        <div class="contenido-nosotros">
+            <div class="imagen">
+                <picture>
+                    <source
+                        srcset="../build/img/nosotros_sidebar.avif" 
+                        type="image/avif">
+                    <source
+                        srcset="../build/img/nosotros_sidebar.webp" 
+                        type="image/webp">
+                    <source
+                        srcset="../build/img/nosotros_sidebar.jpg" 
+                        type="image/jpeg">
+                    <img loading="lazy" decoding="async" src="../build/img/nosotros_sidebar.jpg" lazyalt="imagen" width="500" height="300">
+                </picture>
+            </div>
+
+            <div class="texto">
+                <p>Desde el origen de nuestros granos cuidadosamente seleccionados en fincas sustentables, hasta el aroma que envuelve nuestro espacio, nuestro compromiso es ofrecerte más que café: una experiencia.
+
+                    Somos apasionados del arte del café y del poder de unir a las personas. Ya sea que busques un lugar para trabajar, relajarte o compartir una charla con amigos, aquí encontrarás un rincón acogedor, donde los detalles importan y las sonrisas son parte del menú.</p>
+
+                    <blockquote>Excelente Sabor!</blockquote>
+
+                    <p>Nuestros baristas no solo preparan bebidas, ¡crean momentos! Con una mezcla de técnica, creatividad y amor, cada bebida refleja nuestra misión de hacer que tu día sea un poco más especial.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor contenido-footer bg-white">
+            <div class="footer-box ubicacion">
+                <h3>Ubicación</h3>
+                <p>Calle Alpujarras 39</p>
+                <p>Leganés, Madrid</p>
+            </div>
+            <div class="footer-box reservacion">
+                <h3>Reservación</h3>
+                <p>Tel. 626-54-11-59</p>
+                <a href="tel:+626541159">Llamar</a>
+            </div>
+            <div class="footer-box horario">
+                <h3>Horario</h3>
+                <p>Lun-Jue: 11:00 - 22:00</p>
+                <p>Vie-Sab: 09:00 - 24:00</p>
+                <p>Dom: Cerrado</p>
+            </div>
+        </div>
+        <p class="copyright">Todos los derechos reservador. La Cafetería</p>
+    </footer>
+
+</body>
+</html>

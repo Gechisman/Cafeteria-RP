@@ -1,0 +1,43 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer{
+    background-color: v.$primario;
+    margin-top: -.1rem;
+
+    .contenido-footer{
+        padding: 5rem;
+
+        @include m.tablet { 
+            @include m.grid(3, 2rem);
+        }
+    }
+}
+
+.footer-box{
+    text-align: center;
+    font-family: v.$fuenteCursiva;
+    margin-bottom: v.$separacion;
+
+    @include m.tablet { 
+        margin-bottom: 0;
+    }
+        
+    h3{
+        font-family: v.$fuenteCursiva;
+        margin: 0 0 1rem 0;
+        font-size: 2.4rem;
+        color: v.$secundario;
+    }
+    p, a{
+        font-size: 2rem;
+        margin: 0;
+    }   
+    
+}
+.copyright{
+        color: v.$blanco;
+        text-align: center;
+        padding: 2rem;
+        margin: 0; //Para que no haya margen abajo y se vea mal
+    }

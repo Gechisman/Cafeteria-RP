@@ -1,0 +1,9 @@
+//!AQUÍ VAN TODAS LAS CARPETAS DE SCSS
+//*CADA UNO CONTIENE UN INDEX QUE ES DONDE ESTÁN EL RESTO DE .SCSS
+
+@use 'base'; //Me permite importar y poder compilarlo en el app.css
+@use 'header';
+@use 'footer';
+@use 'inicio';
+@use 'internas';
+@use 'utilidades'; //Son las últimas que se van a compilar ya que es lo que modifica ciertos atributos de los otros elementos

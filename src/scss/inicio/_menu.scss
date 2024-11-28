@@ -1,0 +1,55 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.nuestro-menu{
+    background-image: url(../img/menu_arriba.svg),//Nos permite colocar colores e imagenes
+    url(../img/menu_abajo.svg),
+    linear-gradient(to top, v.$primario, v.$primario); 
+    background-repeat: no-repeat;
+    background-position: center 5rem, center 92%, 100%; //0% es arriba y 100% abajo
+    background-size: 200%;
+    padding: 15rem 5rem 20rem 5rem;
+
+    @include m.tablet{
+        padding: 15rem 0 20rem 0;
+        background-size: 100%;
+    }
+
+    @include m.desktop { 
+        background-size: 50%, 50%, 100%; //50% La primera img, 50% la segunda img y 100% el color de fondo
+    }
+}
+
+.menu{
+    h3{
+        color: v.$blanco;
+    }
+
+    li{
+        display: flex;
+        justify-content: space-between;
+
+        p{
+            color: v.$blanco;
+            font-size: 2.2rem;
+            line-height: 1.5;
+            margin: 0 0 3rem 0;
+           
+            span{
+                display: block;
+                color: v.$secundario;
+            }
+        }
+    }
+
+    .precio{
+        font-size: 4rem;
+        font-weight: 700;
+    }
+}
+
+.grid-menu{
+    @include m.tablet{
+        @include m.grid(2, 2rem);
+    }
+}
